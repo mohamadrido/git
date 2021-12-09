@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif; background-color: #dedede;}
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: transparent;
+  color: #333;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  right: 0;
+  font-size: 16px;
+}
+
+/* The popup form - hidden by default */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50px;
+  right: 10px;
+  z-index: 9;
+}
+
+.popup a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.popup a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.popup:before {
+	content:'';
+    transform: rotate(180deg);
+	position: absolute;
+	width: 0;
+	height: 0;
+    border-width: 8px;
+	border-style: solid;
+	right: 0;
+	left: auto;
+    top: -15px;
+	margin-right: 9px;
+    border-color: #555 transparent transparent transparent;
+}
+/* Add styles to the form container */
+.container {
+  width: 250px;
+  padding: 13px;
+  background-color: #555;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.container .left {
+  text-align: left;
+}
+
+.container .right {
+  text-align: right;
+}
+
+/* Set a style for the submit/login button */
+.container .btn {
+  background-color: transparent;
+  color: white;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  border-radius: 6px;
+}
+
+/* Add a red background color to the cancel button */
+.container .cancel {
+  background-color: transparent;
+}
+
+/* Add some hover effects to buttons */
+.container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+
+</head>
+<body>
+
+<div class="open-button" onclick="openPopup()"><i class="fa fa-bars"></i></div>
+
+<div class="popup" id="myPopup">
+  <div class="container">
+    <div class="right">
+        <div class="btn cancel" onclick="closePopup()"><i class="fa fa-times"></i></div>
+    </div>
+    <div class="left">
+    <a href="/about"><i class="fa fa-user"></i> About</a>
+    <hr>
+    <a href="https://blog.mohamadrido.com"><i class="fa fa-blog"></i> Blog</a>
+    <hr>
+    <a href="/help"><i class="fa fa-question"></i> Help</a>
+    </div>
+    <!--div class="right">
+    <hr>
+    <a href="/support"><i class="fa fa-heart"></i> Support</a>
+    <hr>
+    <a href="/categories"><i class="fa fa-tab"></i> Categories</a>
+    <hr>
+    <a href="/license"><i class="fa fa-copy"></i> License</a>
+    </div>
+  </div-->
+</div>
+
+<script>
+function openPopup() {
+  document.getElementById("myPopup").style.display = "block";
+}
+
+function closePopup() {
+  document.getElementById("myPopup").style.display = "none";
+}
+</script>
+
+</body>
+</html>
