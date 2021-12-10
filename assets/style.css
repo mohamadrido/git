@@ -236,7 +236,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .border-pale-red,.hover-border-pale-red:hover{border-color:#ffe7e7!important}.border-pale-green,.hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .border-pale-yellow,.hover-border-pale-yellow:hover{border-color:#ffffcc!important}.border-pale-blue,.hover-border-pale-blue:hover{border-color:#e7ffff!important}
 
-
 /* Parallax */
 html, body {
   height: 100%;
@@ -295,15 +294,3 @@ a:hover {
   background: rgba(243, 243, 243, 0.75);
   color:rgb(20,20,20);
 }
-
-/* Full height image header */
-.bgimg-1 {background-position: center; background-size: cover; background-image: url("https://www.w3schools.com/w3images/mac.jpg"); min-height: 100%;}
-.bg-color {background-color: transparent; color: #333;}
-.bg-color1 {background-color: #009688; color: #fff;}
-.bg-color2 {background-color: #f44336; color: #fff;}
-.mySlides {display: none}
-/* Search */
-#search-container {max-width: 40em; padding: 1em; margin: 1em auto; border: 0px solid lightgrey;}
-#search-input {display: inline-block; padding: .5em; width: 100%; font-size: 0.8em; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
-/* Style the counter cards */
-.page-card {padding: 10px 15px; text-align: left; background-color: #fff; color: #333;}
