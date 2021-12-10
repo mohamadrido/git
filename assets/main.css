@@ -295,3 +295,24 @@ a:hover {
   background: rgba(243, 243, 243, 0.75);
   color:rgb(20,20,20);
 }
+/* Full height image header */
+.bgimg-1 {background-position: center; background-size: cover; background-image: url("https://www.w3schools.com/w3images/mac.jpg"); min-height: 100%;}
+.bg-color {background-color: transparent; color: #333;}
+.bg-color1 {background-color: #009688; color: #fff;}
+.bg-color2 {background-color: #f44336; color: #fff;}
+.mySlides {display: none}
+/* Search */
+#search-container {max-width: 40em; padding: 1em; margin: 1em auto; border: 0px solid lightgrey;}
+#search-input {display: inline-block; padding: .5em; width: 100%; font-size: 0.8em; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+/* Float four columns side by side */
+.page-column {float: left; width: 33.33%; border-radius: 0px; margin: 0 auto;}
+/* Remove extra left and right margins, due to padding */
+.page-row {margin: 0 auto;}
+/* Clear floats after the columns */
+.page-row:after {content: ""; display: table; clear: both;}
+/* Style the counter cards */
+.page-card {padding: 10px 15px; text-align: left; background-color: transparent; color: #333;}
+img {border-radius: 5px; width: 100%;}
+/* Responsive columns */
+@media screen and (max-width: 900px) {.page-column {width: 50%; display: block;}}
+@media screen and (max-width: 600px) {.page-row {margin: 0 auto;} .page-column {width: 100%; display: block;}}
