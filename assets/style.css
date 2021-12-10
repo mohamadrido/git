@@ -311,7 +311,7 @@ a:hover {
 .page-row:after {content: ""; display: table; clear: both;}
 /* Style the counter cards */
 .page-card {padding: 10px 15px; text-align: left; background-color: transparent; color: #333;}
-img {border-radius: 5px; width: 100%;}
+.image {border-radius: 5px; width: 100%;}
 /* Responsive columns */
 @media screen and (max-width: 900px) {.page-column {width: 50%; display: block;}}
 @media screen and (max-width: 600px) {.page-row {margin: 0 auto;} .page-column {width: 100%; display: block;}}
