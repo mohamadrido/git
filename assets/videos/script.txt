@@ -1,0 +1,3 @@
+<video controls="" poster="/assets/images/bugatti-chiron.jpg">
+<source src="/assets/videos/bugatti-chiron.mp4" type="video/mp4">
+</video>
