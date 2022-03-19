@@ -1,0 +1,82 @@
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4617197,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript>
+<a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4617197&101" alt="html hit counter" border="0"></a>
+</noscript>
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;d1b13e6a9436459d81952f562274982d&quot;}"></script>
+<script async="" type="text/javascript" src="https://s4.histats.com/stats/0.php?4617197&amp;@f16&amp;@g1&amp;@h1&amp;@i1&amp;@j1647710379723&amp;@k0&amp;@l1&amp;@mPretended%20Studio&amp;@n0&amp;@o1000&amp;@q0&amp;@r0&amp;@s0&amp;@ten-US&amp;@u1366&amp;@b1:166338569&amp;@b3:1647710380&amp;@b4:js15_as.js&amp;@b5:420&amp;@a-_0.2.1&amp;@vhttps%3A%2F%2Fpretendedstudio.com%2F&amp;@w"></script>
+<iframe src="https://t.dtscout.com/idg/?su=104016477103847D3A3421590FF1D46F" style="display: none;" width="0" height="0"></iframe>
+#nodocument
+<html>
+<head></head>
+<body>
+<script>
+
+window.onload = function() {
+var uid_g  = '104016477103847D3A3421590FF1D46F'; 
+var uid_s  = '6D0016477103866DCCBE316B87E26B27'; 
+var uid_su = '104016477103847D3A3421590FF1D46F';
+
+var debug = {};
+var pass_uid = false;
+var method = false;
+
+if(uid_g && uid_g.length > 0) {
+    method = "got";
+    pass_uid = uid_g;
+} else if(uid_su && uid_su.length > 0) {
+    method = "setu";
+    pass_uid = uid_su;
+} else if(uid_s.length > 0) {
+    method = "set";
+    pass_uid = uid_s;
+}
+
+debug.pass_method = method;
+debug.pass_uid = pass_uid;
+
+var ls_uid = localStorage.getItem('uid');
+debug.ls_uid = ls_uid;
+
+var uid = false
+if(method == 'got') {
+    uid = pass_uid;
+    debug.uid_src = 'got';
+} else if(ls_uid) {
+    uid = ls_uid;
+    debug.uid_src = 'ls';
+} else {
+    uid = pass_uid;
+    debug.uid_src = 'setn';
+}
+
+if(uid) {
+    debug.uid = uid;
+    localStorage.setItem('uid', uid);
+
+    var ret = {u : uid, src : debug.uid_src};
+    try {
+        parent.postMessage(JSON.stringify(ret), "*");
+    } catch(e) { }
+}
+}
+
+</script>
+</body>
+</html>
+</iframe>
+<script async="" src="https://t.dtscdn.com/widget/?d=104016477103847D3A3421590FF1D46F&amp;nid=300&amp;p=0&amp;t=-420&amp;s=1366x768x24&amp;u=https%3A%2F%2Fpretendedstudio.com%2F&amp;r="></script>
+<script async="" src="https://t.dtscdn.com/widget/?d=104016477103847D3A3421590FF1D46F&amp;nid=300&amp;p=0&amp;t=-420&amp;s=1366x768x24&amp;u=https%3A%2F%2Fpretendedstudio.com%2F&amp;r="></script>
+<img src="https://i.liadm.com/s/59074?bidder_id=204553&amp;bidder_uuid=">
+<img src="https://um.simpli.fi/lj_match?r=71320">
+<img src="https://i.liadm.com/s/57333?bidder_id=204553&amp;bidder_uuid=">
+<script async="" src="https://t.dtscdn.com/widget/?d=104016477103847D3A3421590FF1D46F&amp;nid=300&amp;p=0&amp;t=-420&amp;s=1366x768x24&amp;u=https%3A%2F%2Fpretendedstudio.com%2F&amp;r="></script>
+<script src="https://get.s-onetag.com/f0c84061-4182-4398-8e37-5ff5b5698a6f/tag.min.js" async="" defer=""></script>
+<script async="" type="text/javascript" src="https://s4.histats.com/stats/e.php?4617197&amp;@Ab&amp;@R33190&amp;@w"></script>
