@@ -71,7 +71,7 @@ button.menu-toggle{background-color:transparent;width:100%;border:0;text-align:c
 	<div class="inside-article">
 		
 		<div class="entry-content" itemprop="text">
-				<h2 class="title-today" ></h2><h2 id="digital-clock"> </h2>
+				<span class="title-today" ></span> <span>-</span> <span id="digital-clock"> </span>
 	<div class="calendar-form">
 		<select class="form-control months" id="select-month">
 			<option value="0"> Januari</option>
@@ -491,7 +491,7 @@ var HijriJS = {
 		var first_date = new Date(year_now, month_now, 1);
 		var last_date = new Date(year_now, month_now + 1, 0);
 
-		var title_today = document.querySelector("h2.title-today");
+		var title_today = document.querySelector("span.title-today");
 		var java_today = HijriJS.gregorianToHijri(now.getFullYear(), (now.getMonth() + 1), now.getDate());
 		title_today.textContent = hari[now.getDay()]+', '+ now.getDate() +' '+bulan[month_now]+' '+year_now+' / '+java_today.day+' '+java_months[java_today.month-1]+' '+java_today.year;
 
@@ -731,16 +731,20 @@ var HijriJS = {
   color: #ee3322;
 }
 #calendar tr td.col-5 p {
-  color: #14a111;
+  color: #04aa6d;
 }
-h2.title-today, h2.title-hijr {
-  margin-bottom: 42px;
+span{
+  font-size: 18px;
   font-weight: 600;
+}
+span.title-today, h2.title-hijr {
+  margin-bottom: 42px;
+
 }
 h2.title-hijr {
   margin: 24px 0 18px;
-  font-size: 24px;
-  color: #119911;
+  font-size: 18px;
+  color: #04aa6d;
   float: right;
 }
 .calendar-form #btn-result {
