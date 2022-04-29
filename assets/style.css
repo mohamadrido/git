@@ -243,11 +243,11 @@ a:hover {text-decoration: none;}
 .parallax [class*="bg__"] {position: relative; height: 300px; text-indent: -9999px; background-attachment: fixed; background-position: top center; background-size: cover;}
 .parallax [class*="bg__"]:nth-child(2n) {box-shadow: inset 0 0 1em #111;}
 .parallax .bg__foo, .parallax .bg__bazz {height: 100vh;}
-.parallax .bg__foo {background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/30354/parallax1.jpg);}
-.parallax .bg__bar {background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/30354/parallax2.jpg);}
-.parallax .bg__baz {background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/30354/parallax3.jpg);}
-.parallax .bg__bazz {background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/30354/parallax1.jpg);}
-.parallax .bg__break {box-shadow: inset 0 0 1em #111; background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/30354/parallax1.jpg);}
+.parallax .bg__foo {background-image: url(https://mohamadrido.com/assets/images/instruments.jpg);}
+.parallax .bg__bar {background-image: url(https://mohamadrido.com/assets/images/instruments-wireframe.jpg);}
+.parallax .bg__baz {background-image: url(https://mohamadrido.com/assets/images/instruments-solid.jpg);}
+.parallax .bg__bazz {background-image: url(https://mohamadrido.com/assets/images/instruments.jpg);}
+.parallax .bg__break {box-shadow: inset 0 0 1em #111; background-image: url(https://mohamadrido.com/assets/images/instruments.jpg);}
 .parallax .capture {float: right; width: 200px; padding: 1em; margin: -1.5em 1em 0 0; text-indent: 0; background: rgba(243, 243, 243, 0.75); color:rgb(20,20,20);}
 /* Scrollbar Chrome */
 html {scrollbar-width: thin; scrollbar-color: #888 #f1f1f1;}
