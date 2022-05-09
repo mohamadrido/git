@@ -1,0 +1,28 @@
+<html>
+<head>
+<!--script language="JavaScript" type="text/JavaScript" src="login.js"></script-->
+</head>
+<body>
+<form class="box" method="post">
+<input type="text" id="username" placeholder="Username">
+<input type="password" id="password" placeholder="Password">
+<input type="submit" id="mySubmit" onclick="Login(this.form); return false;" value="Login">
+</form>
+  
+<script language="JavaScript" type="text/JavaScript">
+function Login(form) {
+username = new Array("admin");
+password = new Array("test");
+if (form.username.value == username[0] && form.password.value == password[0]) {
+location.href='about.html';
+return false;
+}
+else {
+alert("Either the username or password you entered is incorrect.\nPlease try again.");
+form.username.focus();
+}
+return true;
+}
+</script>
+</body>
+</html>
