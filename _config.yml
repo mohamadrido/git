@@ -8,6 +8,10 @@ plugin:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-avatar
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jemoji
 markdown: kramdown
 highlighter: rouge
 paginate: 9
