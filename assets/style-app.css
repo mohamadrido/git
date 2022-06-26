@@ -259,7 +259,7 @@ html {scrollbar-width: thin; scrollbar-color: #888 #f1f1f1;}
 ::-webkit-scrollbar-corner {background: red;}
 ::-webkit-scrollbar-track-piece {background: #f1f1f1;}
 /* Full height image header */
-.bgimg-1 {background-position: center; background-size: cover; background-image: url("https://mohamadrido.com/assets/images/bg.jpg"); min-height: 100%;}
+.bgimg-1 {background-position: center; background-size: cover; background-image: url("https://mohamadrido.com/assets/images/bg-app.png"); min-height: 100%;}
 .bg-color {background-color: transparent; color: #333;}
 .bg-color1 {background-color: #009688; color: #fff;}
 .bg-color2 {background-color: #f44336; color: #fff;}
