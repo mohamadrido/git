@@ -34,6 +34,7 @@ body {
 .wk{
     margin: 0;
     writing-mode: vertical-rl;
+    padding-left: 15%;
 }
 .card-head h2{
 	color: white;
@@ -57,7 +58,6 @@ body {
     margin-right: -20px;
 }
 .card{
-    padding: 10px;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
@@ -83,18 +83,14 @@ body {
     width: 23%;
 }
 .btn-arr{
-	background-color: transparent;
+    background-color: transparent;
     border: none;
     color: white;
-    padding: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 50%;
-    width: 40px;
-	cursor:pointer;
+    font-size: 100%;
+    cursor:pointer;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
 }
@@ -121,10 +117,23 @@ table.cal_table{
 	border-collapse: collapse;
 	width:100%;
 }
+table th {
+ border-width:1px;
+ border-style:solid;
+ border-color:#e6e6e6;
+ background-color:#f0f0f0;
+}
+table td{
+ border-width:1px;
+ border-style:solid;
+ border-color:#e6e6e6;
+ background-color:#fff;
+}
 table td:hover{
     background-color: #ddd !important;;
     cursor:pointer;
 }
+td.time-today {color:#37474f;}
 table, th, td {
 	text-align:center !important;
 	color: #37474f;
@@ -199,7 +208,8 @@ p.m-date{
 #go_year{
     width: 100%;
     padding: 10px;
-    background-color: #4d626e !important;
+    font-size:100%;
+    background-color: orange !important;
     border: none;
     color: white !important;
 }
@@ -250,7 +260,7 @@ blockquote:before{
     top: -12px !important;
 }
 #holiday{
-    font-size: 100%;
+    font-size: 120%;
 }
 @media only screen and (max-width: 600px) {
     table.cal_table {
@@ -277,12 +287,16 @@ blockquote:before{
 
 <div class="card">
 <div class="card-head">
-<h2 id="hari_ini">Kalender Jawa Hari Ini</h2>
+<h2 id="hari_ini">Kalender Jawa</h2>
 <p style="margin:0px"></p>
 </div>
 <div class="card-content">
 <table class="cal_table" border="1">
 <tbody>
+<tr>
+<td>Jam</td>
+<td class="time-today" id="digital-clock"></td>
+</tr>
 <tr>
 <td>Pasaran</td>
 <td class="to_pasaran"></td>
@@ -305,7 +319,7 @@ blockquote:before{
 </tr>
 </tbody>
 </table>
-<p id="see_more">Selengkapnya</p>
+<p id="see_more"><svg height="24" viewBox="0 -12 48 48" width="24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" fill="deepskyblue"></path></svg></p>
 </div>
 </div>
 <div id="kj">
@@ -322,16 +336,18 @@ $('#year').text(g_year);
 </script>
 
 <div class="card">
-<div class="card-head">
+<div class="card-head" style="text-align:center;">
 <div class="no-margin">
 <div class="col-s3">
+<button onclick="prev_year()" class="btn-arr">&lsaquo;&lsaquo;</button>
 <button onclick="prev()" class="btn-arr">&lsaquo;</button>
 </div>
 <div class="col-s6">
-<span class="card-title"><span id='month'></span> <span id='year'></span></span>
+<span class="card-title"><span id="month"></span> <span id="year"></span></span>
 </div>
 <div class="col-s3">
 <button onclick="next()" class="btn-arr">&rsaquo;</button>
+<button onclick="next_year()" class="btn-arr">&rsaquo;&rsaquo;</button>
 </div>
 </div>
 </div>
