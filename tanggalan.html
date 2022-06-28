@@ -74,18 +74,15 @@ body {
     width: 23%;
 }
 .btn-arr{
-	background-color: transparent;
+    background-color: transparent;
     border: none;
     color: white;
-    padding: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 50%;
+    font-size: 100%;
     width: 40px;
-	cursor:pointer;
+    cursor:pointer;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
 }
@@ -102,7 +99,7 @@ body {
     text-align: left;
     font-size: 90%;
     padding: 15px 0px;
-    background-color: deepskyblue;
+    background: linear-gradient(200deg,#24bb81 0,teal 56%,teal 130%);
     margin-left: -10px;
     margin-right: -10px;
     margin-top: 10px;
@@ -144,7 +141,7 @@ div.card-head{
     text-align: left;
     padding: 15px 0px; 
     color: white;
-    background-color: deepskyblue;
+    background: linear-gradient(200deg,#24bb81 0,teal 56%,teal 130%);
     margin-top: -10px;
     margin-left: -10px;
     margin-right: -10px;
@@ -174,7 +171,7 @@ p.m-date{
 	text-align: center;
     font-size: 90%;
     padding: 15px 0px;
-    background-color: #fff;
+    background #fff;
 }
 
 .list{
@@ -255,7 +252,7 @@ blockquote:before{
     top: -12px !important;
 }
 #holiday{
-    font-size: 100%;
+    font-size: 110%;
 }
 @media only screen and (max-width: 600px) {
     table.cal_table {
@@ -282,7 +279,7 @@ blockquote:before{
 
 <div class="card">
 <div class="card-head">
-<h2 id="hari_ini">Kalender Jawa Hari Ini</h2>
+<h2 id="hari_ini" style="padding-left:10px;">Kalender Jawa Hari Ini</h2>
 <p style="margin:0px"></p>
 </div>
 <div class="card-content">
@@ -332,7 +329,7 @@ $('#year').text(g_year);
 <div class="card-head" style="text-align:center;">
 <div class="no-margin">
 <div class="col-s3">
-<button onclick="prev_year()" class="btn-arr" style="color:orange;">&lsaquo;&lsaquo;</button>
+<button onclick="prev_year()" class="btn-arr">&lsaquo;&lsaquo;</button>
 <button onclick="prev()" class="btn-arr">&lsaquo;</button>
 </div>
 <div class="col-s6">
@@ -340,7 +337,7 @@ $('#year').text(g_year);
 </div>
 <div class="col-s3">
 <button onclick="next()" class="btn-arr">&rsaquo;</button>
-<button onclick="next_year()" class="btn-arr" style="color:orange;">&rsaquo;&rsaquo;</button>
+<button onclick="next_year()" class="btn-arr">&rsaquo;&rsaquo;</button>
 </div>
 </div>
 </div>
@@ -436,7 +433,7 @@ $('#year').text(g_year);
 
 <div class="card">
 <div class="card-head">
-<h2>Loncat ke</h2>
+<h2 style="padding-left:10px;">Loncat ke</h2>
 </div>
 <div style="margin-top:5px;">
 <div class="col-s6">
