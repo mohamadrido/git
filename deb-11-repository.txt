@@ -1,0 +1,43 @@
+---------------------------------------------------------------------------------------------------
+
+# deb cdrom:[Official Debian GNU/Linux Live 11.1.0 gnome 2021-10-09T12:28]/ bullseye main
+
+deb cdrom:[Official Debian GNU/Linux Live 11.1.0 gnome 2021-10-09T12:28]/ bullseye main
+
+# Line commented out by installer because it failed to verify:
+#deb http://security.debian.org/debian-security bullseye-security main
+# Line commented out by installer because it failed to verify:
+#deb-src http://security.debian.org/debian-security bullseye-security main
+
+---------------------------------------------------------------------------------------------------
+
+deb http://deb.debian.org/debian/ bullseye main
+deb-src http://deb.debian.org/debian/ bullseye main
+
+deb http://security.debian.org/debian-security bullseye-security main contrib
+deb-src http://security.debian.org/debian-security bullseye-security main contrib
+
+deb http://deb.debian.org/debian/ bullseye-updates main contrib
+deb-src http://deb.debian.org/debian/ bullseye-updates main contrib
+
+---------------------------------------------------------------------------------------------------
+
+deb http://deb.debian.org/debian bullseye main contrib non-free
+deb-src http://deb.debian.org/debian bullseye main contrib non-free
+
+deb http://deb.debian.org/debian-security bullseye/updates main contrib non-free
+deb-src http://deb.debian.org/debian-security bullseye/updates main contrib non-free
+
+deb http://deb.debian.org/debian bullseye-updates main contrib non-free
+deb-src http://deb.debian.org/debian bullseye-updates main contrib non-free
+
+---------------------------------------------------------------------------------------------------
+
+deb http://deb.debian.org/debian bullseye-backports main contrib non-free
+deb-src http://deb.debian.org/debian bullseye-backports main contrib non-free
+
+---------------------------------------------------------------------------------------------------
+
+apt update
+
+---------------------------------------------------------------------------------------------------
