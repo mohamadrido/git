@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Yuque</title>
+    <style type="text/css">
+      html, body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Chinese Quote', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+      .module-error {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+      }
+
+      .module-error h3 {
+        font-size: 32px;
+        font-weight: normal;
+        color: #262626;
+      }
+
+      .error-tip {
+        margin-right: 50px;
+        color: #8c8c8c;
+      }
+
+      .error-ua {
+        margin-right: 50px;
+        color: #e8e8e8;
+      }
+
+      .module-error .image {
+        max-width: 380px;
+      }
+
+      .module-error .image img {
+        max-width: 100%;
+      }
+
+      .error-message b {
+        color: #51b72f;
+        margin: 0 4px;
+      }
+
+      .error-message img {
+        position: relative;
+        top: 3px;
+        margin: 0 4px;
+      }
+
+      @media screen and (max-width: 768px) {
+        .module-error {
+          flex-direction: column;
+        }
+
+        .module-error h3 {
+          font-size: 28px;
+        }
+
+        .error-tip {
+          margin-right: 0;
+          margin-bottom: 10px;
+          text-align: center;
+        }
+
+        .error-ua {
+          margin-right: 0;
+          margin-bottom: 10px;
+          text-align: center;
+        }
+
+        .module-error .image {
+          max-width: 170px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="module-error">
+      <div class="error-tip">
+        <h3>The current browser version needs to be upgraded.</h3>
+        <p id="error-message" class="error-message">For your experience, please install the latest version of Chrome browser to visit Yuque</p>
+        <p class="error-ua">Mozilla/5.0 (X11; Linux x86_64; rv:91.0) Gecko/20100101 Firefox/91.0</p>
+      </div>
+      <div class="image">
+        <img src="https://gw.alipayobjects.com/zos/rmsportal/ZKkHOEsUzVIHAfcVgCVV.png">
+      </div>
+    </div>
+  
+  <script nonce="">
+    (function() {
+      // 针对 IE 浏览器优化提示
+      var isMSIE = /.*(MSIE |MSIE|Trident.*rv:)\d+.*/.test(window.navigator.userAgent);
+      if (isMSIE) {
+        document.getElementById('error-message').innerHTML += [
+          '<p>',
+          '如您使用的是360浏览器，请通过<b>极速模式</b>',
+          '访问语雀，切换方式：点击浏览器地址栏右侧的 IE 符号',
+          '<img width="20" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMi1jMDAwIDc5LjU2NmViYzViNCwgMjAyMi8wNS8wOS0wODoyNTo1NSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIzLjQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTY3MENFMUFGQTA3MTFFQ0IyOURBRTI5NTVDMzkxNDMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTY3MENFMUJGQTA3MTFFQ0IyOURBRTI5NTVDMzkxNDMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpGNUFBQzUwOUZBMDYxMUVDQjI5REFFMjk1NUMzOTE0MyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGNUFBQzUwQUZBMDYxMUVDQjI5REFFMjk1NUMzOTE0MyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmwCXxcAAAR7SURBVHja7Jl5iE9RFMfnN7YZspN1IlLWxpoUsu+EKfKHskSWyPKHJAwSERFjLFkS/tCMJbs/LFmzjqwpYYwtZGkYMvx8Tp3R63lv3n3vtwzl1Lf7fu/d37nfd+6555x7XygcDif8a5KY8A/Kf9LxktJON0OhUFwGH34sNZmmJ+gKmoDK4B24Arbt639LrhPs6y7ktBBjTRqyTWlmgZGgkku3t6AfxK/bOcbVPSCbAvZweQ9MECOC1aAzqAhBsVZ9sAhUA3vpX+oPo0bT0gyQRNMYNAAy9RXBe51yITYflNfuG8A8iH5w0TWaZqdYO7tfzomokkZ5bZqxYCDo6LZObLIOzIbwdw/dV2kOQXqx50I0JFudRpRNDKBnGhiKjiW0WyH/06XfOXWTyH2awXrR3AdTInjxFLAZnEdfQ5c+4jrfIibNAGJZ8bGatke3wasA5DtJiENvR4dn4v9PIiKN4vE0m2z/ywNTwUdQO6DVxQAn0d/edl9m4GJg0ijsQZNpu70FDAAzNTpEIhKvDzNOXcs9CYO3jDKiA2FRuAuU0VufNWLcFQuBepbuEhEugYegQJ91cXAnJ6kFdoA+jFlPM2NCINLIAlBHr3PBECV0AdSw9DsgixPrvLS9tCSIMRrqkj3G6k3/IerPmY5lhlecVivnaaJ4IEqBJJEzNgsfBYMgHC5mxiSWHzYwkuiei67LTrWHiU+nKeH7Wth8UYJWwqJ1enGERXh+RJKFwZjdNIsGLk1lqp6Jn2nczNKKzCo5EHpk6Go7Dfv18VWa2kTC0GBI5TG9GVx3d+jTimdFNYRkt0+WZwWWBCEzUWhIWhZvhm/SGn6WQDiH6xGaAd30VLb8rhqForBlUPfIl1isRVFmnDcojdweGFV5kM6WpgR2VpJc8n1HDwj3LSHCru7r5dNi8uUGys9qbI22fA0SPaTeaG2g/DHTmF6i5rfIdEM9PZmVxGKKefuWLMlAZ6H4s6/ooRFjoI+CfrBh3926b/RCRpCQJ9v7Um5+5SBreNGaHlYe5WNRnw5Ceqi26RqvvUQK9nNad1uJJoI2YDs/9/hYgPt9xem0463L605EfL4ZGKFnEabyGjzX8lLcrIrPtbYWf57xuxozjNMdlHC+FvMrtcozFSnm24KmAQhLdbc0yAFkUd5/JBEBFKi1P8Uhok1ivDdBSNfX9o2lFr6jZWosiS9mnCyvTm6kky37PWsRf1Y3Ak9jQDgd/QtNOrqRLrRs7e27D9kdp4LtWh9HKjKbw9BrvNDdSOdq24JQVc6B+Ecwjst2YK99RgxFNg2rZLGi60A00vgli5ukucVXBrvJS03WDYBUg8dBXY0aZR3CoESga+CUgP9/CzI1bnFaqjtZeM3BCzm6YoBce9KgkePYZXq8MIc+KyzPK2iN8UPOSbxOSIsT4y8BDNpbz+xCmmg2ghtqwVRN8ykaV8dC6lCsQoqvzxcQl9P69Q5TXZRqt+qqfxvLwO37mwvEZa82TjNckp5ingcHiz7kxFqMSP/t8v/jZ7zklwADAIdakWs8GTU6AAAAAElFTkSuQmCC" />',
+          '选择 “极速模式(推荐)”',
+          '</p>'
+        ].join('');
+      }
+    })();
+  </script>
+</body></html>
